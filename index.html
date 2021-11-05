@@ -19,7 +19,7 @@
             <p>Esta calculadora serve para você medir o seu índice de massa corpórea.</p>
         </header>
         <main>
-            <div class="form">
+            <form class="form">
                 <div class="inputs">
                     <div class="peso">
                         <input type="number" placeholder="digite seu peso" id="peso"><span>em [kg]</span>
@@ -30,10 +30,10 @@
                 </div>
                 <div class="resultado">
                     <button id="calcule">calcule</button>
-                    <button type="reset">apagar</button>
+                    <button type="reset" id="reset">apagar</button>
                     <p><span id="resultado"></span></p>
                 </div>
-            </div>
+            </form>
             <div class="table">
                 <table>
                     <thead>

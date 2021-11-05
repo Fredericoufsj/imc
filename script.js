@@ -1,4 +1,5 @@
 const calcule = document.getElementById('calcule')
+const resetar = document.getElementById('reset')
 
 function imprimir() {
     let resultado = document.getElementById('resultado')
@@ -32,5 +33,23 @@ function imprimir() {
     }
 
 }
+
+function reset() {
+    let tr1 = document.getElementById('tr1')
+    let tr2 = document.getElementById('tr2')
+    let tr3 = document.getElementById('tr3')
+    let tr4 = document.getElementById('tr4')
+    let tr5 = document.getElementById('tr5')
+    let tr6 = document.getElementById('tr6')
+
+    tr1.style.backgroundColor = "white";
+    tr2.style.backgroundColor = "white";
+    tr3.style.backgroundColor = "white";
+    tr4.style.backgroundColor = "white";
+    tr5.style.backgroundColor = "white";
+    tr6.style.backgroundColor = "white";
+}
+
 //Pega o click do mouse e aciona a função imprimir
 calcule.addEventListener('click', imprimir)
+resetar.addEventListener('click', reset)
